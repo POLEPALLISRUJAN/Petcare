@@ -450,7 +450,7 @@ img {
 }
 
 .appointment-image {
-  background-image: url("/assets/appointment-photo.png");
+  background-image: url("./assets/appointment-photo.png");
   background-position: center;
   background-size: cover;
   min-height: calc(100vh - 86px);

@@ -1,5 +1,18 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './index.css'
+import logo from './assets/logo.png'
+import pcP1IcText from './assets/PC p1 ic text.png'
+import heroIllustration from './assets/hero-illustration.png'
+import pcP2Ic1 from './assets/PC p2 ic1.png'
+import pcP2Ic2 from './assets/PC  p2 ic2.png'
+import pcP2Ic3 from './assets/PC p2 ic3.png'
+import pcP2Ic4 from './assets/PC p2 ic4.png'
+import pcP3Ic1 from './assets/PC p3 ic1.png'
+import pcP3Ic2 from './assets/PC p3 ic2.png'
+import pcP3Ic3 from './assets/PC p3 ic3.png'
+import pcP3Ic4 from './assets/PC p3 ic4.png'
+import pcP4Ic1 from './assets/PC p4 ic1.png'
+import pcP4Ic1Text from './assets/PC p4 ic1 text.png'
 
 export default function App() {
   const [navOpen, setNavOpen] = useState(false)
@@ -66,8 +79,8 @@ export default function App() {
     <>
       <header ref={headerRef} className="site-header">
         <nav className="navbar container" aria-label="Main navigation">
-          <a href="#home" className="brand" aria-label="Petsplay home">
-            <img src="/assets/logo.png" alt="Petsplay logo" />
+            <a href="#home" className="brand" aria-label="Petsplay home">
+            <img src={logo} alt="Petsplay logo" />
           </a>
 
           <div ref={navRef} className={`nav-links ${navOpen ? 'open' : ''}`} id="navLinks">
@@ -98,14 +111,14 @@ export default function App() {
           <div className="container hero-grid">
             <div className="hero-copy reveal">
               <a href="#contact" className="hero-copy-image-link" aria-label="Book appointment">
-                <img src="/assets/PC p1 ic text.png" alt="Expert pet care for your furry friends. Book appointment." />
+                <img src={pcP1IcText} alt="Expert pet care for your furry friends. Book appointment." />
               </a>
             </div>
 
             <div className="hero-art reveal" aria-label="Illustration of pet parents caring for pets">
               <div className="soft-glow glow-left"></div>
               <div className="soft-glow glow-right"></div>
-              <img src="/assets/hero-illustration.png" alt="Pet parents playing with pets" />
+              <img src={heroIllustration} alt="Pet parents playing with pets" />
             </div>
           </div>
         </section>
@@ -120,28 +133,28 @@ export default function App() {
           <div className="container card-grid services-grid">
             <article className="service-card reveal">
               <span className="service-icon">
-                <img src="/assets/PC p2 ic1.png" alt="Veterinary care icon" />
+                <img src={pcP2Ic1} alt="Veterinary care icon" />
               </span>
               <h3>Veterinary Care</h3>
               <p>Expert health checkups and medical care with state-of-the-art equipment.</p>
             </article>
             <article className="service-card reveal">
               <span className="service-icon">
-                <img src="/assets/PC  p2 ic2.png" alt="Premium grooming icon" />
+                <img src={pcP2Ic2} alt="Premium grooming icon" />
               </span>
               <h3>Premium Grooming</h3>
               <p>Luxury spa treatments and professional grooming for ultimate comfort.</p>
             </article>
             <article className="service-card reveal">
               <span className="service-icon">
-                <img src="/assets/PC p2 ic3.png" alt="Smart training icon" />
+                <img src={pcP2Ic3} alt="Smart training icon" />
               </span>
               <h3>Smart Training</h3>
               <p>Personalized behavior training using modern, positive reinforcement methods.</p>
             </article>
             <article className="service-card reveal">
               <span className="service-icon">
-                <img src="/assets/PC p2 ic4.png" alt="Luxury boarding icon" />
+                <img src={pcP2Ic4} alt="Luxury boarding icon" />
               </span>
               <h3>Luxury Boarding</h3>
               <p>5-star accommodation with 24/7 monitoring and personalized care.</p>
@@ -158,28 +171,28 @@ export default function App() {
           <div className="container card-grid about-grid">
             <article className="choice-card reveal">
               <span>
-                <img src="/assets/PC p3 ic1.png" alt="Certified experts icon" />
+                <img src={pcP3Ic1} alt="Certified experts icon" />
               </span>
               <h3>Certified Experts</h3>
               <p>Licensed veterinarians and certified groomers with 10+ years experience.</p>
             </article>
             <article className="choice-card reveal">
               <span>
-                <img src="/assets/PC p3 ic2.png" alt="Stress-free care icon" />
+                <img src={pcP3Ic2} alt="Stress-free care icon" />
               </span>
               <h3>Stress-Free Care</h3>
               <p>Gentle, loving approach that keeps your pets calm and comfortable.</p>
             </article>
             <article className="choice-card reveal">
               <span>
-                <img src="/assets/PC p3 ic3.png" alt="Smart booking icon" />
+                <img src={pcP3Ic3} alt="Smart booking icon" />
               </span>
               <h3>Smart Booking</h3>
               <p>AI-powered scheduling with real-time updates and reminders.</p>
             </article>
             <article className="choice-card reveal">
               <span>
-                <img src="/assets/PC p3 ic4.png" alt="Award winning icon" />
+                <img src={pcP3Ic4} alt="Award winning icon" />
               </span>
               <h3>Award Winning</h3>
               <p>Recognized as the #1 pet care service with 5,000+ happy customers.</p>
@@ -196,33 +209,33 @@ export default function App() {
           <div className="container testimonial-grid">
             <article className="testimonial-card reveal">
               <div className="review-head">
-                <img src="/assets/PC p4 ic1.png" alt="Thomas Daniel" />
+                <img src={pcP4Ic1} alt="Thomas Daniel" />
                 <div>
                   <h3>Thomas daniel</h3>
                   <p>★★★★★</p>
                 </div>
               </div>
-              <img className="review-text-img" src="/assets/PC p4 ic1 text.png" alt="Customer review text" />
+              <img className="review-text-img" src={pcP4Ic1Text} alt="Customer review text" />
             </article>
             <article className="testimonial-card reveal">
               <div className="review-head">
-                <img src="/assets/PC p4 ic1.png" alt="Thomas Daniel" />
+                <img src={pcP4Ic1} alt="Thomas Daniel" />
                 <div>
                   <h3>Thomas daniel</h3>
                   <p>★★★★★</p>
                 </div>
               </div>
-              <img className="review-text-img" src="/assets/PC p4 ic1 text.png" alt="Customer review text" />
+              <img className="review-text-img" src={pcP4Ic1Text} alt="Customer review text" />
             </article>
             <article className="testimonial-card reveal">
               <div className="review-head">
-                <img src="/assets/PC p4 ic1.png" alt="Thomas Daniel" />
+                <img src={pcP4Ic1} alt="Thomas Daniel" />
                 <div>
                   <h3>Thomas daniel</h3>
                   <p>★★★★★</p>
                 </div>
               </div>
-              <img className="review-text-img" src="/assets/PC p4 ic1 text.png" alt="Customer review text" />
+              <img className="review-text-img" src={pcP4Ic1Text} alt="Customer review text" />
             </article>
           </div>
         </section>
@@ -251,8 +264,8 @@ export default function App() {
 
       <footer className="site-footer">
         <div className="container footer-grid">
-          <a href="#home" className="brand footer-brand">
-            <img src="/assets/logo.png" alt="Petsplay logo" />
+            <a href="#home" className="brand footer-brand">
+            <img src={logo} alt="Petsplay logo" />
           </a>
           <ul>
             <li><a href="#home">Home</a></li>
